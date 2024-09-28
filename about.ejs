@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <%- include('partials/header.ejs') %>
+    <%- include('partials/sideScroll.ejs') %>
+
+    <div class="alignPara paraWidth2">
+        <div>
+            <div class="heading2">
+                <h1>About Us</h1>
+            </div>
+    
+            <div class="coffe-pic">
+                <img src="images/coffee-cups.webp" width="600px">
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section>
+    
+    <div class="h1 margin alignPara paraWidth2">
+        <p>At IDON, we believe that every great idea deserves to 
+        be shared, explored, and brought to life. Our platform is a creative 
+        hub where innovators, thinkers, and problem-solvers come together to 
+        exchange thoughts, collaborate on projects, and inspire one another.</p>
+
+        <p>Whether you're a seasoned entrepreneur, a curious student, or someone 
+        with a spark of creativity, IDON is your space to showcase 
+        ideas, seek feedback, and collaborate with a community eager to help 
+        you turn your concepts into reality.</p>
+
+        <p>We foster a community where diverse perspectives and expertise can meet, 
+        fueling new ways of thinking and solving the world’s most pressing problems.
+        From tech innovations and sustainability solutions to art and social initiatives, 
+        we welcome ideas from all fields.</p>
+
+        <p>Join us and be part of a community where innovation thrives, and the next big 
+        idea could be yours.</p>
+    </div>
+    
+</section>
+</body>
+<script>
+    function hideSidebar() {
+        const sidebar = document.querySelector('.navBar');
+        sidebar.style.display = 'none';
+    }
+    function showSidebar() {
+        const sidebar = document.querySelector('.navBar');
+        sidebar.style.display = 'flex';
+    }
+</script>
+</html>
+
+<%- include('partials/footer.ejs') %>

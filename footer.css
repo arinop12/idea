@@ -1,0 +1,41 @@
+
+.footer{
+    background-color: rgb(37, 37, 39);
+    height: 350px;
+    color: white;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: left;
+    padding: 50px;
+    padding-top: 60px;
+    font-size: 14px;
+}
+
+ol{
+    list-style: none;
+}
+
+.footerStyle{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.footerContainer2{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    justify-content: left;
+    padding-left: 80px;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.about{
+    text-decoration:none;
+    color: white;
+}

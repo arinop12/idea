@@ -1,0 +1,49 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/sideScroll.ejs') %>
+
+<section>
+     <div class="ideaCenter">
+          <div class="ideaBorder">
+               <form action="/idea" method="post" class="postIdea">
+                    <h1 class="ideaTitle">Submit Your <span style="color: red;">IDEA</span></h1>
+
+                    <div class="paraWidth ideaInput">
+                         <label for="user_name">Username:</label><br>
+                         <input id="user_name" name="user_name" maxlength="100" placeholder="Enter your name..." autocomplete="off">
+                    </div>
+
+                    <div class="paraWidth ideaInput">
+                         <label for="user_topic">Topic:</label><br>
+                         <input id="user_topic" name="user_topic" maxlength="100" placeholder="Enter your Topic..." autocomplete="off">
+                    </div>
+
+                    <div class="paraWidth ideaInput">
+                         <label for="user_idea">Your Idea:</label><br>
+                         <textarea id="user_idea" name="user_idea" rows="5" cols="3" required autocomplete="off"></textarea>
+                    </div>
+
+                    <div class="paraWidth ideaInput">
+                         <label for="user_email">Your Email:</label><br>
+                         <input id="user_email" name="user_email" rows="5" cols="3" required placeholder="Enter your mail..." autocomplete="off">
+                    </div>
+                    <div class="IB">
+                         <button class="ideaButton" type='submit'>Click Here</button>
+                    </div>
+               </form>
+
+          </div>
+     </div>
+
+     
+</section>
+
+<script>
+    function hideSidebar() {
+        const sidebar = document.querySelector('.navBar');
+        sidebar.style.display = 'none';
+    }
+    function showSidebar() {
+        const sidebar = document.querySelector('.navBar');
+        sidebar.style.display = 'flex';
+    }
+</script>

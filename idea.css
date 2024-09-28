@@ -1,0 +1,74 @@
+.postIdea{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    position: relative;
+    gap: 20px;
+    width: 550px;
+}
+
+.ideaTitle{
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0%;
+    width: 550px;
+}
+
+.ideaInput input{
+    width: 550px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(226, 223, 223);
+}
+
+.ideaInput textarea{
+    width: 533px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid rgb(226, 223, 223);
+}
+
+.ideaInput{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.ideaBorder{
+    border-radius: 10px;
+    border: 1px solid rgb(226, 223, 223);
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.ideaCenter{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ideaButton{
+    background-color: #e65a5a;
+    font-weight: 700;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.IB{
+    padding-bottom: 50PX;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: #110909;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,68 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/sideScroll.ejs') %>
+<section>
+    
+    <div class="post-idon">
+        IDON
+    </div>
+</section>
+
+<section class="post-section">
+    <div class="alignPara post-grid">
+        <div class="post-allposts">
+            <% for(let item of posts){%>
+            <div class="post-border">
+
+                <div class="post-border-header">
+                    <div class="user-photo">
+                        <p><%= item.user_name[0] %></p>
+                    </div>
+    
+                    <div>
+                        <div>
+                            Username: <%= item.user_name %>
+                        </div>
+                        <div>
+                            Topic: <%= item.user_topic %>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-border-time">
+                    <p><%= date %></p>
+                </div>
+                
+                <div class="post-border-usertext">
+                    <p><%= item.user_idea %></p>
+                </div>
+
+                <div class="post-border-useremail">
+                    <p>Useremail: <%= item.user_email %></p>
+                </div>
+            </div>
+            <% } %>
+        </div>
+
+        <div>
+            <div class="post-popular">
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    function hideSidebar() {
+        const sidebar = document.querySelector('.navBar');
+        sidebar.style.display = 'none';
+    }
+    function showSidebar() {
+        const sidebar = document.querySelector('.navBar');
+        sidebar.style.display = 'flex';
+    }
+</script>
+
+<%- include('partials/footer.ejs') %>

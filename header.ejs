@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/idea.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header class="headerSection">
+            <div onclick="showSidebar()" class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </div>
+
+            <div class="home">
+                HOME
+            </div>
+
+            <div class="searchDiv">
+                <form action="/find" method="get">
+                    <input id="SearchBar" type="search" name="searchBar" value="" placeholder="Search">
+                    <input id="SearchButton" type="submit" name="searchButton">
+                </form>
+            </div>
+
+        </header>
+

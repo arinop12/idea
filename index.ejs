@@ -1,0 +1,158 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/sideScroll.ejs') %>
+<section>
+    <div class="alignPara paraWidth">
+        <div class="heading">
+            <h1>Where <span style="color: rgb(223, 61, 61);">BIG</span> Ideas Take Flight</h1>
+        </div>
+        <h3>Share, Shape and Shine</h3>
+
+        <div class="h1 margin">
+            <h1 >Showcasing Innovation, One Idea at a Time</h1>
+            <p class="margin">
+                Welcome to Idea Display, the platform where creativity meets opportunity.
+                 Here, innovative minds come together to share, explore, and bring ideas to life.
+                  Whether you’re here to present your groundbreaking concept or find inspiration, 
+                  our goal is to help you take your ideas from imagination to impact. Dive in and discover 
+                  the next big thing!
+            </p></br>
+            <p class="margin">
+                At Idea Display, we’re more than just a platform—we’re a movement. 
+                We exist to transform the sparks of your imagination into revolutions 
+                that shape tomorrow. From groundbreaking tech to social breakthroughs, 
+                our mission is to fuel the most daring ideas and create a community where 
+                innovation thrives. The future doesn’t wait, and neither do we. Join us in 
+                crafting the world of tomorrow, one bold idea at a time.
+            </p>
+        </div>
+
+        <div class="h1 margin">
+            <h1>From Vision to Reality: Unleash Your Idea’s Potential</h1>
+            <p>At Idea Display, we provide the stage where your idea takes 
+                center stage, evolving from a fleeting thought into something
+                extraordinary. Whether your vision has the potential to
+                revolutionize industries, reshape communities, or rethink 
+                the way we approach everyday challenges, this is where you 
+                belong. We invite you to submit your idea and witness its 
+                transformation from a seed of creativity into a fully realized
+                solution, supported and shaped by a community of fellow innovators,
+                thinkers, and creators. With every submission, you’re not just 
+                presenting an idea—you’re lighting the path toward progress. 
+                Let your concept shine, grow, and become the catalyst for change 
+                in a world that needs bold thinkers more than ever. Share your vision 
+                with us, and together we’ll nurture it into something truly impactful.</p>
+        </div>
+
+
+        <div class="h1 margin">
+            <h1>Peeking into Tomorrow</h1>
+            <p>
+                Have you ever imagined what tomorrow holds? At Idea Display, you don’t have to wonder. 
+                Step into a world of visionary thinking, where the boundaries of what’s possible are 
+                constantly being redefined. Our platform is a showcase of cutting-edge ideas, brought 
+                to life by bold innovators from every corner of the globe. These aren’t just concepts—t
+                hey’re the blueprints of a future in the making. From technologies that will transform 
+                industries to solutions that will reshape the way we live and interact, this is where to
+                morrow’s breakthroughs are born. Explore a curated collection of revolutionary ideas that
+                have the potential to solve today’s most pressing challenges and unlock new opportunitie
+                s. Each idea you discover offers a glimpse into a future that’s closer than you think. 
+                Take a journey through these bold visions and experience the future unfolding, one groundbreaking idea at a time
+            </p>
+
+
+        </div>
+
+        <div class="imageFlex">
+            <img src="images/wrld.jpg" width="250">
+            <img src="images/dustbin.jpg" height="200" width="250">
+            <img src="images/ai_mind.jpg" height="200" width="250">
+        </div>
+        
+        <div class="h1 margin">
+            AI promises to revolutionize industries, making life more efficient 
+            while raising questions about ethics and control. On the environment
+            al front, tomorrow's innovations could help reverse climate change, 
+            with sustainable energy solutions and smart technologies leading the
+            charge. The internet will continue to connect the world in unpreced
+            ented ways, fostering global collaboration and information sharing.
+            However, these advancements bring responsibility—how we use AI, pr
+            otect our planet, and ensure a free and open internet will define the 
+            world we create.
+        </div>
+
+        <div class="h1 margin">
+            <h1>Fueling the Next Generation of Innovation</h1>
+            <p> Idea Display was born from a passion to provide a stage for those 
+                who dare to think differently. We believe that great ideas deserve 
+                to be seen, shared, and nurtured. Our mission is to create a vibrant 
+                ecosystem where creators of all backgrounds—engineers, artists, scientists, 
+                and entrepreneurs—can connect, collaborate, and grow. By fostering a community 
+                of bold thinkers, we aim to accelerate the transformation of ideas into solutions 
+                that address real-world challenges. At Idea Display, every idea matters, and every
+                innovation has the potential to change the world.
+                <hr>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="commentSection">
+    <div class="commentHeading">
+        <h2>Leave a Comment</h2>
+    </div>
+
+
+    <div>
+            <div class="items">
+                <form class="commentFlex paraWidth alignPara" action="/comment" method="post">
+                    <label for="commentText">Your Comment:</label>
+                    <textarea name="commentText" id="commentText" maxlength="300" aria-placeholder="Share your thoughts..." placeholder="Share your thoughts..." required></textarea>
+                
+                    <label for="commentEmail">Your Email:</label>
+                    <input name="commentEmail" type="email" id="commentEmail" placeholder="Enter your email" required>
+                
+                    <button type="submit" class="submitButton">Submit</button>
+                </form>
+
+                <form action="/editComment" method="post">
+                    
+                </form>
+            </div>     
+    </div>
+
+    <div class="commentFlex alignPara">
+        <p>Recent Comments:</p>
+        <%for(let comment of comments){%>
+            <div class="commentDiv">
+                <div class="commentDiv2">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#333"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+                    </div>
+                    
+                    <div class="commentBox2">
+                        <p><%= comment.comment_email%></p>
+                    </div>
+                </div>
+
+                <div class="commentBox">
+                    <%= comment.comment_text%>
+                </div>
+            </div>
+        <% } %>    
+    </div>    
+</section>
+</main>
+</body>
+
+<script>
+    function hideSidebar() {
+        const sidebar = document.querySelector('.navBar');
+        sidebar.style.display = 'none';
+    }
+    function showSidebar() {
+        const sidebar = document.querySelector('.navBar');
+        sidebar.style.display = 'flex';
+    }
+</script>
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,255 @@
+.heading{
+    font-size: 2rem;
+    font-family: Oswald;
+    position: relative;
+    top: 50px;
+}
+
+.heading2{
+    font-size: 1.5rem;
+    font-family: Oswald;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+    width: 600px;
+    height: auto;
+}
+
+.paraWidth{
+    max-width: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+.margin{
+    margin: 0;
+    padding: 0%;
+}
+
+.h1{
+    padding-top: 30px;
+}
+
+.imageFlex{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    gap:5px;
+}
+
+/* General section styling */
+.commentSection {
+    padding: 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Heading styling */
+.commentHeading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.commentHeading h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Form structure */
+.commentFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    max-width: 600px;
+    
+}
+
+label {
+    font-weight: 500;
+    color: #555;
+}
+
+/* Input and textarea styling */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button styling */
+.submitButton {
+    width: 150px;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .commentSection {
+        padding: 1.5rem;
+    }
+
+    .commentHeading h2 {
+        font-size: 1.5rem;
+    }
+
+    .commentFlex {
+        gap: 1rem;
+    }
+
+    .submitButton {
+        width: 100%;
+    }
+}
+
+.commentDiv{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.commentDiv .commentBox{
+    height: 100px; 
+}
+
+.commentDiv2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.commentBox{
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    border: 1px solid rgb(187, 186, 186);
+}
+
+.commentBox2{
+    display: flex;
+    margin: 0;
+    padding: 0%;
+    align-items: center;
+}
+
+
+/*About us page*/
+
+.coffe-pic{
+    padding-top: 50px;
+}
+
+.paraWidth2{
+    width: 46%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40PX;
+} 
+
+/*All post site css*/
+
+.post-card{
+    height: 400px;
+    width: 300px;
+    border: 1px solid rgb(204, 203, 203);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.post-idon{
+    width: 100%;
+    height: 20vh;
+    padding-top: 40px;
+    font-weight: 900;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.post-grid{
+    display: grid;
+    grid-template-columns: 800px auto;
+    grid-template-rows: auto;
+    gap: 50px;
+}
+
+.post-border{
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    gap:5px ;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 203, 203);
+    height: auto;
+}
+
+.post-border-usertext{
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 203, 203);
+    height: auto;
+}
+
+.user-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(204, 203, 203);
+    border-radius: 50%;
+}
+
+.post-border-header{
+    display: flex;
+}
+
+.post-border-time{
+    padding-left: 30px;
+}
+
+.post-border-useremail{
+    padding-left: 30px;
+}
+
+.post-allposts{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-section{
+    height: 100vh;
+}
